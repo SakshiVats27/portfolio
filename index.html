@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/aba64fcbba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/LOGO1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <p>BTech Computer Science Student</p>
+                <h1>Hi, I'm <span>Sakshi Vats</span>.</h1>
+            </div>
+        </div>
+    </div>
+    <!------------------------about----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/profile.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a B.Tech Computer Science Engineering 2024 passing-out student of 
+                        Lovely Professional University. I have decent knowledge of C++,Python,
+                       HTML,CSS and Javascript. Along with that I am good at problem-solving and analytical skills.
+                        I have exposure of Computer Networks, SQL, Oops and OS. I am willing to work, gain experience
+                        and improve my skills. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br>C++/Python/HTML/CSS/Javascript</li>
+                            <li><span>Problem-Solving</span><br>Data Structure & Algorithms</li>
+                            <li><span>Database management System</span><br>SQL</li>
+                            <li><span>Others</span><br>Cloud Computing, R,Tableau,Excel,Computer Networks, Oops </li>
+                            <li><span>Soft-Skills</span><br>Communication,Leadership,Adaptibility,Quick Learner</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Website Designing</span><br>Cgpa Booster<br>Weather Forecasting Website<br>Calculator<br>Ecommerce<br>
+                            University Management System</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech in Computer Science and Engineering</span><br>Lovely Professional University, Phagwara, IN (2020-2024)<br> Cgpa - 7.86/10.00</li>
+                            <li><span>Higher Secondary</span><br>BR DAV Public School, Begusarai, IN (2019)<br>Percentage: 71.6 %</li>
+                            <li><span>Matriculatio</span><br>ST. Paul Sr. Secondary School, Begusarai, IN (2017)<br> Cgpa - 9.8/10.00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------services-------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Tech Enthusiast</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-user-secret"></i>
+                    <h2>Software Engineer Enthusiast</h2>
+                    <p>Willing to work as Software Engineer having experience in programming skills
+                        such as C++,Python,SQL,HTML,CSS,Javascript and problem-solving.
+                    </p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Website Designing</h2>
+                    <p>Exposure to Website designing with decent knowledge of tech skills such as html, css, Javascript.
+                        Quick-learner and adaptive. Willing to work on projects, learn new technologies and improve skills.
+                    </p>
+                    
+                </div>
+                <div>
+                    <i class="fa-regular fa-file-code"></i>
+                    <h2>Data Analysis</h2>
+                    <p>Good at analytical skills. knowledge of data-management(SQL) with Python.
+                       Exposure to R and Tableau. Created Dashboard using dataset. Open to learn new technologies.
+                    </p>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------------portfolio------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Cgpa Booster</h3>
+                        <p>An Ed-tech platform specially designed for college students. </p>
+                        <a href="https://cgpabooster.in/"><i class="fas fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Weather Forecasting</h3>
+                        <p>It tells about the weather of the city.</p>
+                        <a href="https://github.com/SakshiVats27/Weather-forecasting"><i class="fas fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>It works as a simple calculator which performs basic arithmetic operations. </p>
+                        <a href="https://github.com/SakshiVats27/Calculator"><i class="fas fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!------------------------------contact--------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-regular fa-envelope"></i>sakshi12135@gmail.com</p>
+                    <p><i class="fas fa-solid fa-phone"></i>+91-7856004032</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/SakshiVats27"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sakshi-vats-/"><i class="fas fa-brands fa-linkedin"></i></a>
+
+                    </div>
+                    <a href="images/Sakshi Vats.pdf" download class="btn btn2">Download RESUME</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Made with <i class=" fas fa-solid fa-heart"></i> by Sakshi Vats</p>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyG6-0UOj6iL7iDq7e2rNjF2IvETvgnpzxJju3CKY-cFSWie9RmAK6qPLsiRlBfxLvO/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+        </script>
+</body>
+
+</html>
